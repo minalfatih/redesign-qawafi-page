@@ -100,48 +100,6 @@ header .navbar .logo {
   width: 200px;
   margin-top: 80px;
 }
-/*@media (max-width: 990px) {
-  header .navbar {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    z-index: 100;
-  }
-  header .navbar .container {
-    gap: 20px;
-  }
-  header button.active div img {
-    transition: 0.3s linear;
-  }
-  header button.active div .hamburger {
-    opacity: 0;
-  }
-  header button div .close {
-    opacity: 0;
-  }
-  header button.active div .close {
-    opacity: 1;
-  }
-  header nav .navbar-nav {
-    text-align: center;
-  }
-  header nav .navbar-nav .nav-item {
-    width: 100%;
-    padding: 15px;
-  }
-  header nav .navbar-nav .nav-item:not(:last-child) {
-    border-bottom: 1px solid rgb(255 255 255 / 20%);
-  }
-  header nav .navbar-nav .nav-item .nav-link {
-    color: white;
-  }
-  header nav .navbar-nav .nav-item:last-child .nav-link {
-    background-color: transparent;
-    border: 1px solid white;
-    padding: 15px;
-    margin-top: 10px;
-  }
-}*/
 
 header {
   position: absolute;
@@ -191,7 +149,7 @@ section .info p {
   background-color: var(--Soft-Blue);
   color: white;
   border: 0;
-  margin-right: 15px;
+  margin-bottom: 15px;
   padding: 10px;
   margin-top: 50px;
   width: 230px;
