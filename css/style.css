@@ -79,7 +79,7 @@ header nav .navbar-nav .nav-item:last-child .nav-link:hover {
   transition: 0.3s linear;
 }
 header .navbar .logo {
-    width: 60px;
+    width: 100px;
 }
 @media (max-width: 990px) {
   header .navbar {
@@ -132,7 +132,7 @@ header {
 }
 
 .landing {
-  background-image: url(/images/background.jpg);
+  background-image: url(https://raw.githubusercontent.com/minalfatih/redesign-qawafi-page/refs/heads/main/images/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 100vh;
