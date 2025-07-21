@@ -5,9 +5,10 @@
   --Very-Dark-Blue: hsl(229, 31%, 21%);
 }
 html {
-  scroll-behavior: smooth;
+  
 }
 body {
+  font-family: "Zain", sans-serif;
   position: relative;
   padding: 0;
   margin: 0;
@@ -96,8 +97,8 @@ header nav .navbar-nav .nav-item:last-child .nav-link:hover {
   transition: 0.3s linear;
 }
 header .navbar .logo {
-  width: 100px;
-  margin-top: 40px;
+  width: 150px;
+  margin-top: 60px;
 }
 /*@media (max-width: 990px) {
   header .navbar {
@@ -195,19 +196,15 @@ section .info {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 200px;
+  padding-top: 250px;
 }
 section .info h1 {
   color: var(--Soft-Blue);
-  font-size: 2.2rem;
+  font-size: 2.3rem;
   font-weight: bold;
   width: 100%;
 }
-@media (max-width: 990px) {
-  section .info h1 {
-    font-size: 2rem;
-  }
-}
+
 section .info p {
   color: var(--Very-Dark-Blue);
   line-height: 1.5;
@@ -242,6 +239,9 @@ section .main-title {
 .audio-player h1,
 section .main-title h1 {
   color: var(--Soft-Blue);
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
 }
 section .main-title p {
   color: var(--Very-Dark-Blue);
@@ -689,4 +689,4 @@ footer p {
           box-shadow: 0 6px 14px rgba(76, 175, 80, 0.6);
           color: #fff;
           border: none;
-}
+    }
