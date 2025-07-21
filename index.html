@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/q-logo.png"
+    />
+    <link rel="stylesheet" href="./dist/aos.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Digital plus | Qawafi</title>
+  </head>
+  <body>
+    <main>
+      <header class="">
+        <nav class="navbar navbar-expand-lg">
+          <div class="container">
+          <img class="logo" src="./images/q-logo.png" alt="logo"/>
+            <button
+              class="navbar-toggler shadow-none border-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#main"
+              aria-controls="main"
+              aria-expanded="false"
+              aria-label="Toggler navigation"
+            >
+              <div class="position-relative">
+                <img
+                  class="position-absolute top-0 end-0 hamburger"
+                  src="./images/icon-hamburger.svg"
+                  alt="icon-hamburger"
+                />
+                <img
+                  class="position-absolute top-0 end-0 close"
+                  src="./images/icon-close.svg"
+                  alt="icon-close"
+                />
+              </div>
+            </button>
+            <div class="collapse navbar-collapse" id="main">
+              <ul class="navbar-nav ms-auto gap-0 gap-lg-5">
+                <li class="nav-item">
+                  <a href="#features" class="nav-link text-uppercase"
+                    >عن قوافي</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a href="#pricing" class="nav-link text-uppercase">استمع</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#contact" class="nav-link text-uppercase">الاسئلة الشائعة</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link text-uppercase rounded-3"
+                    >اشترك</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <section class="landing mb-5">
+        <div class="container">
+          <div
+            class="row justify-content-around align-items-center flex-column-reverse gap-md-5 pe-0 flex-lg-row"
+          >
+            <div
+              class="info aos-init col-md-12 col-lg-5 mt-5 mb-5 mt-lg-0 mb-lg-0 text-center" data-aos="fade-up">
+              <h1>لأن الشعر لا يقرأ فقط بل يسمع</h1>
+              <p class="mt-4 mb-4">
+            استمع الى مختارات من أجمل القصائد بصوت الشعراء أنفسهم متى ما أردت
+            نخبة من الشعراء تحت منبر واحد
+              </p>
+              <div class="btns">
+                <button class="p-2 pe-4 ps-4 rounded-2" id="special">
+                  إبدأ الاستماع الآن
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="feature pb-0 aos-init" id="features" data-aos="fade-up">
+        <div
+          class="container d-flex justify-content-center align-items-center flex-column text-center"
+        >
+          <div class="main-title p-4 p-lg-5">
+            <h1 class="mb-4 fs-2">قوافي للشعر منبع</h1>
+            <p>
+              قوافي هي بوابة قصائد بفئات مختلفة وعدد من الشعراء المشهورين
+              والناشئين. يمكن للمشتركين الاستماع الا شعائرهم المفضلين في اي وقت
+              وفي أي مكان عبر الانترنت
+             </p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="audio-player pt-3 player" id="player" data-aos="fade-up">
+        <div class="container">
+          <div class="player-btn pt-5 pb-5 mb-4">
+            <div id="see-all">
+              <a href="#operator">المزيد</a>
+            </div>
+            <div class="main-title p-4 p-lg-5 pb-0">
+              <h1>استمع الان</h1>
+            </div>
+          </div>
+          <div
+            class="audio-box"
+            data-aos="fade-up"
+            class="aos-init"
+            data-index="0"
+          >
+            <div class="progress-circle">
+              <svg width="60" height="60">
+                <circle class="progress-bg" cx="30" cy="30" r="25"></circle>
+                <circle class="progress-bar" cx="30" cy="30" r="25"></circle>
+              </svg>
+              <button class="play-btn">
+                <img src="./images/play-button-svgrepo-com.svg"/>
+              </button>
+            </div>
+            <div class="info">
+              <h3>الشاعر ربيع طه</h3>
+              <small>00:00 / 00:00</small>
+            </div>
+            <img class="thumbnail" src="./images/img1.jpg" alt="author" />
+            <audio src="./audio/audio.m4a"></audio>
+          </div>
+
+          <div
+            class="audio-box"
+            data-aos="fade-up"
+            class="aos-init"
+            data-index="1"
+          >
+            <div class="progress-circle">
+              <svg width="60" height="60">
+                <circle class="progress-bg" cx="30" cy="30" r="25"></circle>
+                <circle class="progress-bar" cx="30" cy="30" r="25"></circle>
+              </svg>
+               <button class="play-btn">
+                <img src="./images/play-button-svgrepo-com.svg"/>
+            </div>
+            <div class="info">
+              <h3>الشاعر</h3>
+              <small>00:00 / 00:00</small>
+            </div>
+            <img class="thumbnail" src="./images/img2.jpg" alt="author" />
+            <audio src="./audio/audio.m4a"></audio>
+          </div>
+
+          <div
+            class="audio-box"
+            data-aos="fade-up"
+            class="aos-init"
+            data-index="2"
+          >
+            <div class="progress-circle">
+              <svg width="60" height="60">
+                <circle class="progress-bg" cx="30" cy="30" r="25"></circle>
+                <circle class="progress-bar" cx="30" cy="30" r="25"></circle>
+              </svg>
+               <button class="play-btn">
+                <img src="./images/play-button-svgrepo-com.svg"/>
+            </div>
+            <div class="info">
+              <h3>الشاعر</h3>
+              <small>00:00 / 00:00</small>
+            </div>
+            <img class="thumbnail" src="./images/img3.jpg" alt="author" />
+            <audio src="./audio/audio.m4a"></audio>
+          </div>
+        </div>
+      </section>
+
+      <section class="download aos-init pt-4 pb-5" id="pricing" data-aos="fade-up">
+        <div
+          class="container d-flex justify-content-center align-items-center flex-column text-center"
+        >
+          <div class="main-title p-4 p-lg-5">
+            <h1 class="mb-4 fs-2">إشترك الآن</h1>
+            <p>
+              اختر شركة الاتصال التي تستخدمها واستمع الى الشعر
+            </p>
+          </div>
+
+          <div class="location aos-init carousel" id="carousel" data-aos="fade-up">
+            <div
+              class="card p-4 ps-0 pe-0 rounded-3 d-flex justify-content-between align-items-center"
+            >
+              <div class="info">
+                <div class="image mb-4">
+                  <img
+                    class="img-fluid"
+                    src="./images/logo.png"
+                    alt="logo-zain"
+                  />
+                </div>
+              </div>
+              <div class="btns p-4 pt-4 pb-0 w-100 position-relative">
+                <img
+                  class="position-absolute top-0 start-0 w-100"
+                  src="./images/bg-dots.svg"
+                  alt="bg-dots"
+                />
+                <button class="p-2 pe-4 ps-4 rounded-2 w-100 m-0" id="special">
+                  إشترك
+                </button>
+              </div>
+            </div>
+            <div
+              class="card p-4 ps-0 pe-0 rounded-3 d-flex justify-content-between align-items-center flex-column"
+            >
+              <div class="info">
+                <div class="image mb-4">
+                  <img
+                    class="img-fluid"
+                    src="./images/mtn.png"
+                    alt="logo-firefox"
+                  />
+                </div>
+              </div>
+              <div class="btns p-4 pt-4 pb-0 w-100 position-relative">
+                <img
+                  class="position-absolute top-0 start-0 w-100"
+                  src="./images/bg-dots.svg"
+                  alt="bg-dots"
+                />
+                <button class="p-2 pe-4 ps-4 rounded-2 w-100 m-0" id="special">
+                  إشترك
+                </button>
+              </div>
+            </div>
+            <div
+              class="card p-4 ps-0 pe-0 rounded-3 d-flex justify-content-between align-items-center flex-column"
+            >
+              <div class="info">
+                <div class="image mb-4">
+                  <img
+                    class="img-fluid"
+                    src="./images/sudani-new.png"
+                    alt="logo-opera"
+                  />
+                </div>
+              </div>
+              <div class="btns p-4 pt-4 pb-0 w-100 position-relative">
+                <img
+                  class="position-absolute top-0 start-0 w-100"
+                  src="./images/bg-dots.svg"
+                  alt="bg-dots"
+                />
+                <button class="p-2 pe-4 ps-4 rounded-2 w-100 m-0" id="special">
+                  إشترك
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="questions aos-init pt-5 pb-5 mt-5 mb-5" data-aos="fade-up">
+        <div
+          class="container d-flex justify-content-center align-items-center flex-column text-center"
+        >
+          <div class="main-title p-4">
+            <h1 class="mb-4 fs-2">الأسئلة الشائعة</h1>
+            <p class="q-pragraph">
+              هنا توجد بعض الاسئلة الشائعة حول منصة قوافي
+            </p>
+          </div>
+
+          <ul class="question aos-init list-unstyled p-3 text-start" data-aos="fade-up">
+            <!-- Question 1 -->
+            <li class="pt-3 pb-3">
+              <div class="">
+                <p class="que m-0 w-100">ما هي قوافي؟</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+              <!-- Answer 1 -->
+              <p class="ans">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
+                tincidunt justo eget ultricies fringilla. Phasellus blandit
+                ipsum quis quam ornare mattis.
+              </p>
+            </li>
+            <!-- Question 2 -->
+            <li class="pt-3 pb-3 open">
+              <div class="">
+                <p class="que m-0 w-100">كيف أشترك في منصة قوافي؟</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+              <!-- Answer 2 -->
+              <p class="ans">
+                Vivamus luctus eros aliquet convallis ultricies. Mauris augue
+                massa, ultricies non ligula. Suspendisse imperdiet. Vivamus
+                luctus eros aliquet convallis ultricies. Mauris augue massa,
+                ultricies non ligula. Suspendisse imperdie tVivamus luctus eros
+                aliquet convallis ultricies. Mauris augue massa, ultricies non
+                ligula. Suspendisse imperdiet.
+              </p>
+            </li>
+            <!-- Question 3 -->
+            <li class="pt-3 pb-3">
+              <div class="">
+                <p class="que m-0 w-100">هل يوجد تطبيق لمنصة قوافي؟</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="12">
+                  <path
+                    fill="none"
+                    stroke="#5267DF"
+                    stroke-width="3"
+                    d="M1 1l8 8 8-8"
+                  />
+                </svg>
+              </div>
+              <!-- Answer 3 -->
+              <p class="ans">
+                Sed consectetur quam id neque fermentum accumsan. Praesent
+                luctus vestibulum dolor, ut condimentum urna vulputate eget.
+                Cras in ligula quis est pharetra mattis sit amet pharetra purus.
+                Sed sollicitudin ex et ultricies bibendum.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <div class="line1 pt-2 mt-5">
+      </div>
+      <div class="line2 pt-2">
+      </div>
+
+      <footer class="pt-5 pb-5 pt-md-4 pb-md-4">
+        <p>&copy; جميع الحقوق محفوظة</p>
+      </footer>
+      <svg class="top-line" xmlns="http://www.w3.org/2000/svg" width="375" height="658"><g fill="none" fill-rule="evenodd" stroke="#4288c428" stroke-width="2"><path d="M172.71-101C70.623-79.38 17.478-39.688 13.273 18.074c-6.307 86.643 231.598 17.186 136.358 198-95.241 180.813-181.318 185.29-136.358 298C58.233 626.784 178.96 685.954 319.21 641.2c93.501-29.836 144.652-140.545 153.453-332.126"/><path d="M214.7-101C134.617-82.012 92.926-47.154 89.628 3.575c-4.948 76.093 181.679 15.094 106.966 173.89C121.882 336.262 54.36 340.192 89.628 439.18c35.269 98.986 129.974 150.95 239.995 111.646C402.97 524.622 443.096 427.395 450 259.141"/><path d="M250.935-103c-60.604 16.56-92.153 46.963-94.65 91.208-3.743 66.367 137.488 13.165 80.949 151.664-56.54 138.5-107.638 141.927-80.948 228.261 26.69 86.335 98.359 131.656 181.618 97.376C393.41 442.655 423.775 357.855 429 211.108"/></g></svg>
+      <svg class="med-line" xmlns="http://www.w3.org/2000/svg" width="375" height="658"><g fill="none" fill-rule="evenodd" stroke="#4288c428" stroke-width="2"><path d="M172.71-101C70.623-79.38 17.478-39.688 13.273 18.074c-6.307 86.643 231.598 17.186 136.358 198-95.241 180.813-181.318 185.29-136.358 298C58.233 626.784 178.96 685.954 319.21 641.2c93.501-29.836 144.652-140.545 153.453-332.126"/><path d="M214.7-101C134.617-82.012 92.926-47.154 89.628 3.575c-4.948 76.093 181.679 15.094 106.966 173.89C121.882 336.262 54.36 340.192 89.628 439.18c35.269 98.986 129.974 150.95 239.995 111.646C402.97 524.622 443.096 427.395 450 259.141"/><path d="M250.935-103c-60.604 16.56-92.153 46.963-94.65 91.208-3.743 66.367 137.488 13.165 80.949 151.664-56.54 138.5-107.638 141.927-80.948 228.261 26.69 86.335 98.359 131.656 181.618 97.376C393.41 442.655 423.775 357.855 429 211.108"/></g></svg>
+      <svg class="bottom-line" xmlns="http://www.w3.org/2000/svg" width="353" height="304"><g fill="none" fill-rule="evenodd" stroke="#4288c428" stroke-width="2"><path d="M180.29 759c102.087-21.62 155.232-61.312 159.437-119.074 6.307-86.643-231.598-17.186-136.358-198 95.241-180.813 181.318-185.29 136.358-298C294.767 31.216 174.04-27.954 33.79 16.8c-93.501 29.836-144.652 140.545-153.453 332.126"/><path d="M138.3 759c80.083-18.988 121.774-53.846 125.072-104.575 4.948-76.093-181.679-15.094-106.966-173.89C231.118 321.738 298.64 317.808 263.372 218.82c-35.269-98.986-129.974-150.95-239.995-111.646C-49.97 133.378-90.096 230.605-97 398.859"/><path d="M102.065 761c60.604-16.56 92.153-46.963 94.65-91.208 3.743-66.367-137.488-13.165-80.949-151.664 56.54-138.5 107.638-141.927 80.948-228.261-26.69-86.335-98.359-131.656-181.618-97.376C-40.41 215.345-70.775 300.145-76 446.892"/></g></svg>
+    </main>
+    <script src="./dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-in-out-sine",
+      });
+    </script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/all.min.js"></script>
+    <script src="./js/main.js"></script>
+    
+  </body>
+</html>
