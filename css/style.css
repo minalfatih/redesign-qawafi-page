@@ -97,8 +97,8 @@ header nav .navbar-nav .nav-item:last-child .nav-link:hover {
   transition: 0.3s linear;
 }
 header .navbar .logo {
-  width: 150px;
-  margin-top: 60px;
+  width: 200px;
+  margin-top: 80px;
 }
 /*@media (max-width: 990px) {
   header .navbar {
@@ -161,33 +161,8 @@ header {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 30px;
+  padding: 20px 20px 0;
 }
-
-.feature {
-  position: relative;
-  overflow: hidden;
-}
-
-/*.landing::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 10%);
-}
-.feature::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  background-color: rgba(66,136,196, 10%);
-  width: 38%;
-  height: 320px;
-  border-radius: 0 0 0 45%;
-  z-index: -1;
-}*/
 section .info {
   position: relative;
   z-index: 10;
@@ -196,11 +171,11 @@ section .info {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 250px;
+  padding-top: 300px;
 }
 section .info h1 {
-  color: var(--Soft-Blue);
   font-size: 2.3rem;
+  color: var(--Soft-Blue);
   font-weight: bold;
   width: 100%;
 }
@@ -218,10 +193,10 @@ section .info p {
   margin-right: 15px;
   padding: 10px;
   margin-top: 50px;
-  width: 200px;
+  width: 230px;
   border-radius: 10px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: bold;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   transition: .3s linear;
@@ -236,10 +211,9 @@ section .info p {
 section .main-title {
   width: 50%;
 }
-.audio-player h1,
-section .main-title h1 {
+.main-title h1 {
   color: var(--Soft-Blue);
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: 700;
   font-style: normal;
 }
@@ -249,25 +223,13 @@ section .main-title p {
   font-size: 18px;
 }
 
-.feature::after {
-  bottom: 0;
-  left: 0;
-  border-radius: 0 0 45% 0;
+section .main-title {
+  width: 100%;
 }
-@media (max-width: 990px) {
-  section .main-title {
-    width: 100%;
-  }
-  .feature::after {
-    bottom: 32%;
-    width: 75%;
-    height: 190px;
-    border-radius: 0 0 35% 0;
-  }
-}
+
 .download {
   overflow: hidden;
-  min-height: 80vh;
+  min-height: 50vh;
 }
 .download .location {
   display: flex;
@@ -689,4 +651,4 @@ footer p {
           box-shadow: 0 6px 14px rgba(76, 175, 80, 0.6);
           color: #fff;
           border: none;
-    }
+  }
