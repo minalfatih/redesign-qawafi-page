@@ -281,21 +281,23 @@ section .main-title p {
 }
 .download .location div:nth-child(1) img {
   position: relative;
-  top: 20%;
-  padding-bottom: 20px;
+  top: 10%;
+  width: 180px;
+}
+.download .location div:nth-child(3), .download .location div:nth-child(2) {
+  padding-bottom: 40px;
 }
 .download .location div:nth-child(2) img {
-  width: 180px;
+  width: 150px;
   position: relative;
   top: 20%;
 }
 .download .location div:nth-child(3) {
-  padding-top: 100px;
+  padding-top: 60px;
 }
-.download .location div:nth-child(3) img {
-  width: 220px;
-  position: relative;
-  top: 0%;
+.download .location div:nth-child(3) .image img {
+  width: 180px;
+  padding-bottom: 30px;
 }
 
 
@@ -599,8 +601,8 @@ footer p {
 }
 
    .carousel {
-      width: 300px;
-      height: 200px;
+      width: 350px;
+      height: 300px;
       position: relative;
       transform-style: preserve-3d;
       transition: transform 1s ease-in-out;
@@ -608,8 +610,8 @@ footer p {
 
     .card {
       position: absolute;
-      width: 300px;
-      left: 10px;
+      width: 400px;
+      left: 0;
       top: 10px;
       background: #fff;
       backface-visibility: hidden;
@@ -629,7 +631,7 @@ footer p {
     
     
 .card {
-  height: 300px;
+  height: 250px;
   -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
           box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
   width: 100%;
