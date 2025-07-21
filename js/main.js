@@ -1,4 +1,4 @@
-let menuBtn = document.querySelector(".navbar-toggler");
+/*let menuBtn = document.querySelector(".navbar-toggler");
 menuBtn.onclick = function () {
   this.classList.toggle("active");
   if (this.classList.contains("active")) {
@@ -13,7 +13,7 @@ menuBtn.onclick = function () {
     }, 500);
   }
 };
-
+*/
 let que = document.querySelectorAll(".question li");
 
 que.forEach((que) => {
