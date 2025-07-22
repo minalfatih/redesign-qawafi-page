@@ -156,7 +156,7 @@ section .main-title p {
 section .main-title {
   width: 100%;
 }
-
+/*
 .download {
   overflow: hidden;
   min-height: 50vh;
@@ -191,7 +191,126 @@ section .main-title {
   width: 180px;
   padding-bottom: 30px;
 }
+*/
 
+.operator .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.operator .container .box {
+  border-radius: 15px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-direction: column;
+}
+.operator .container .box > div {
+  height: 60px;
+  border-radius: 15px 15px 0 0;
+}
+.operator .container .box .place {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  background-size: 600% 600%;
+  -webkit-animation: gradientMove 30s ease infinite;
+  animation: gradientMove 30s ease infinite;
+}
+.operator .container .zain .place {
+  background: linear-gradient(270deg, transparent, #200075, transparent);
+  background-size: 600% 600%;
+  -webkit-animation: gradientMove 30s ease infinite;
+  animation: gradientMove 30s ease infinite;
+}
+.operator .container .mtn .place {
+  background: linear-gradient(270deg, transparent, #eeb808, transparent);
+  background-size: 600% 600%;
+  -webkit-animation: gradientMove 30s ease infinite;
+  animation: gradientMove 30s ease infinite;
+}
+.operator .container .sudani .place {
+  background: linear-gradient(270deg, #006bc9cd, #008a0fb3, #006bc9cd);
+  background-size: 600% 600%;
+  -webkit-animation: gradientMove 30s ease infinite;
+  animation: gradientMove 30s ease infinite;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.operator .container .zain img {
+  width: 150px;
+  height: 100px;
+}
+.operator .container .mtn img {
+  width: 150px;
+  height: 100px;
+}
+.operator .container .sudani img {
+  width: 150px;
+  height: 100px;
+  padding: 20px 15px;
+}
+.operator .container .box .logo-box {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 0 15px 15px;
+   background-color: #fff;
+  padding: 20px;
+  border-radius: 0 0 20px 20px;
+  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  gap: 25px;
+  transition: 0.3s linear;
+}
+
+.operator .container .logo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 576px) {
+  .operator .container .box {
+    height: 166px;
+  }
+  .operator .container .box > div {
+    height: 50px;
+  }
+  .operator .container .box .logo-box {
+    padding: 20px;
+  }
+  .operator .container .logo-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.operator .subscribe-btn {
+  max-width: 200px;
+}
+.operator .mtn .subscribe-btn {
+  max-width: 150px;
+}
 
 @media (min-width: 990px) {
   .question {
