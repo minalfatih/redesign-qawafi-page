@@ -68,6 +68,7 @@ function formatTime(seconds) {
   return `${m}:${s}`;
 }
 
+/*
 const carousel = document.getElementById("carousel");
     let angle = 0;
     let step = 120;
@@ -75,5 +76,5 @@ const carousel = document.getElementById("carousel");
       angle += step;
       carousel.style.transform = `rotateY(${angle}deg)`;
     }, 5000);
-    
+    */
     
