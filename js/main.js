@@ -78,3 +78,17 @@ const carousel = document.getElementById("carousel");
     }, 5000);
     */
     
+    document.querySelector('#see-all a').addEventListener('click', function (e) {
+      console.log("h")
+  e.preventDefault();
+  const target = document.querySelector('#operator');
+  const offset = 100; // مسافة الإزاحة من الأعلى
+
+  const elementPosition = target.getBoundingClientRect().top + window.scrollY;
+  const offsetPosition = elementPosition - offset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: "smooth"
+  });
+});
