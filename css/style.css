@@ -236,7 +236,7 @@ section .main-title {
   animation: gradientMove 30s ease infinite;
 }
 .operator .container .sudani .place {
-  background: linear-gradient(270deg, transparent, #0000c8, transparent);
+  background: linear-gradient(270deg, transparent, #006bc9, #00a9186c, transparent);
   background-size: 600% 600%;
   -webkit-animation: gradientMove 30s ease infinite;
   animation: gradientMove 30s ease infinite;
