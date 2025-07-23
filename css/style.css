@@ -236,7 +236,7 @@ section .main-title {
   animation: gradientMove 30s ease infinite;
 }
 .operator .container .sudani .place {
-  background: linear-gradient(270deg, #006bc9cd, #008a0fb3, #006bc9cd);
+  background: linear-gradient(270deg, transparent, #0000c8, transparent);
   background-size: 600% 600%;
   -webkit-animation: gradientMove 30s ease infinite;
   animation: gradientMove 30s ease infinite;
@@ -258,14 +258,14 @@ section .main-title {
   height: 100px;
 }
 .operator .container .mtn img {
-  width: 120px;
+  width: 140px;
   height: 100px;
   padding-left: 15px;
 }
 .operator .container .sudani img {
   width: 150px;
   height: 100px;
-  padding: 30px 15px;
+  padding: 20px 0 20px 15px;
 }
 .operator .container .box .logo-box {
   width: 100%;
@@ -692,4 +692,4 @@ footer p {
           box-shadow: 0 6px 14px rgba(76, 175, 80, 0.6);
           color: #fff;
           border: none;
-  }
+   }
