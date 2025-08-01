@@ -92,3 +92,40 @@ const carousel = document.getElementById("carousel");
     behavior: "smooth"
   });
 });
+
+
+async function fetchData() {
+  try {
+    let data = await fetch('https://qawafi.mvas.digital/api/v1.0/podcasts/all?page=19');
+
+    if (!data.ok) throw new Error("HTTP Error: " + data.status);
+
+    let dataFile = await data.json();
+    console.log(dataFile);
+    
+    // أخذ أول بودكاست
+    let podcast = dataFile.data[0];
+
+    // تركيب رابط الصوت الكامل
+    let audioUrl = "https://qawafi.mvas.digital" + podcast.url;
+    
+    let podcast2 = dataFile.data[3];
+
+    // تركيب رابط الصوت الكامل
+    let audioUrl2 = "https://qawafi.mvas.digital" + podcast2.url;
+
+    // تشغيل الصوت
+    const audioElement = document.getElementById("player1");
+    audioElement.src = audioUrl;
+    audioElement.play();
+    
+    const audioElement2 = document.getElementById("player2");
+    audioElement2.src = audioUrl2;
+    audioElement2.play();
+    
+  } catch (err) {
+    console.error("Error fetching data:", err);
+  }
+}
+
+fetchData();
